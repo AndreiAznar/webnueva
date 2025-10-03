@@ -1,6 +1,7 @@
 <?php
 // Views/Inicio/index.php
-require_once __DIR__ . '/../../config/app.php';   // <-- para el helper url()
+define('BASE_PATH', __DIR__); // carpeta donde está index.php: /var/www/html
+require_once BASE_PATH . '/config/app.php';
 
 $page_title = 'Visual Technologies — Inicio';
 $nav_active = 'inicio';
